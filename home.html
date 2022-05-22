@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>UNREALCORP</title>
+	<link rel="stylesheet" href="global.css">
+	<link rel="stylesheet" href="homestyle.css">
+	<title></title>
+</head>
+<body>
+	<header id = "MainHeader">
+		<img src="images/UnrealCorp logo (4).png">
+	</header>
+
+	<nav id = "navbar">
+		<ul>
+			<li><a href="file:///C:/Users/elias/Documents/P%C3%A1ginas%20web%20hechas%20por%20mi/CSS%20JS%20HTML%20CRUDO/001/home.html">Home</a></li>
+			<li><a href="file:///C:/Users/elias/Documents/P%C3%A1ginas%20web%20hechas%20por%20mi/CSS%20JS%20HTML%20CRUDO/001/peopleSection.html">Organization</a></li>
+			<li><a href="file:///C:/Users/elias/Documents/P%C3%A1ginas%20web%20hechas%20por%20mi/CSS%20JS%20HTML%20CRUDO/001/About.html">About</a></li>
+		</ul>
+
+	</nav>
+
+	<section id ="showcase">
+
+		<!-- Slideshow container -->
+		<div class="slideshow-container">
+
+			<div class="mySlides">
+				
+				<img src="images/company.jpg">
+				<div class="text">Our mission is to bring the service that the customer deserves at the right time.</div>
+			</div>
+
+			<div class="mySlides">
+				
+				<img src="images/map2.png">
+				<div class="text">Currently, we bring our quality to customers from different places in the world.</div>
+			</div>
+
+			<div class="mySlides">
+				
+				<img src="images/Graph2.png">
+				<div class="text">Our subscribed customers are growing steeply.</div>
+			</div>
+
+			<!-- Next and previous buttons -->
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a> <!-- El '&#10094' es un entidad html que son como simbolos que se pueden agregar a la página, en este caso, una flecha izquierda. Se pueden encontrar más de estos simbolos en: codetable.net. Si se hace click se activara la función js 'plusSlides'-->
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+			<!-- Dots para cambiar de imágen-->
+			
+			<span class="dot" onclick="currentSlide(1)"></span> 
+			<span class="dot" onclick="currentSlide(2)"></span> 
+			<span class="dot" onclick="currentSlide(3)"></span>
+			
+
+		</div>
+
+	</section>
+
+	<section id ="home-sections">
+		<div id ="ValueSection">
+
+			<div class="TextDescription"> <!-- Parte del sidebar donde estara el texto-->
+				<h1>Our Mission</h1>
+				<p>Our company will fight everyday to give the service that the customer deserves from any part of the world. <br />
+				We will guarantee that the service is in accordance with the client's expectations and that it arrives at the right time.</p>
+
+			</div>  
+
+			<aside class="ImageDescription"> <!-- Parte del sidebar donde estara la imagen-->
+				<img src="images/company.jpg">
+			</aside>
+
+		</div>  
+
+		<div id ="MapSection">
+
+			<aside class="ImageDescription"> <!-- Parte del sidebar donde estara la imagen-->
+				<img src="images/map2.png">
+			</aside>
+
+			<div class="TextDescription"> <!-- Parte del sidebar donde estara el texto-->
+				<h1>Our Presence</h1>
+				<p>Our services have managed to expand their borders and satisfy the needs of all our clients from all over the globe. We will continue breaking borders to deliver our quality.</p>
+
+			</div>  
+
+		</div> 
+
+		<div id ="StatisticSection">
+
+			<div class="TextDescription"> <!-- Parte del sidebar donde estara el texto-->
+				<h1>Our Progress</h1>
+				<p>Since the creation of UNREALCORP back in 2015, The number of clients who have subscribed to our services has and continues to grown steeply.</p>
+
+			</div>  
+
+			<aside class="ImageDescription"> <!-- Parte del sidebar donde estara la imagen-->
+				<img src="images/Graph2.png">
+			</aside>
+
+		</div>  
+
+	</section>
+
+	<footer id="main-footer">
+		<p>Copyright &copy; 2022 UNREALCORP</p>
+	</footer>
+
+	<script src="home.js"></script>
+	<script src="global.js"></script>
+</body>
+</html>

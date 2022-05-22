@@ -1,0 +1,71 @@
+body{
+
+    margin:auto;/*Esto va a empujar el texto desde todos sus lados.*/
+    background-color: #404040;
+    font-family: Helvetica;
+}
+
+#MainHeader{
+    background-color: #79CBD4;
+    color: azure;
+    padding: 5px;
+    font-family: Georgia;
+}
+
+#MainHeader img{
+    width: 20%;
+    margin-left: 105px;
+}
+
+#navbar {
+    background: #000000;
+    padding: 0.5px;
+    z-index: 1;
+    
+
+}
+
+#navbar ul{
+    padding-left: 5px;
+    margin-left: 105px;
+}
+
+#navbar li{
+    display: inline; /*Ordenar elementos de lista en línea.*/
+    padding: 0px 0px 5px 5px;
+
+}
+
+#navbar a{
+    color: #c3c4c7;
+    text-decoration: none; /*Para este caso, esto eliminara el interlineado que venía por defecto.*/
+    font-size: 14px;  
+}
+
+#navbar a:hover{
+    color: #FFFFFF;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#showcase{
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #F0F8FF;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#main-footer{
+    background: #050505;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+
+}

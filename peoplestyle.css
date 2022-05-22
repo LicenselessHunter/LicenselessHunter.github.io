@@ -1,0 +1,60 @@
+
+/*SOLUCION CON FLEX*/
+
+#PersonDescription{
+    display: none; /* Se define este section como el container del flex */
+    background-color: black;
+    position: relative;
+    width: 85%;
+    margin: 0 auto;
+}
+
+#TextDescription{ 
+    width: 70%; /* Este div usara el 70% de ancho de PersonDescription */
+    color: #fff;
+    text-align: center; /* Se alinea el texto horizontalmente */
+    align-self: center; /* Propiedad de flex que alinea un item en particular en el centro. En este caso alinea el texto verticalmente */
+    padding: 30px;
+    font-size: 20px;
+
+}
+
+#ImageDescription{
+    width: 30%; /* Este div usara el 30% de ancho de PersonDescription */
+}
+
+/*FIN SOLUCION CON FLEX*/
+
+#ImageDescription img{
+    height:100%; 
+    width:100%;
+    /*La imagen usara el 100% de alto y ancho del div ImageDescription */
+}
+
+#TextDescription img{ 
+    cursor: pointer; /*El mouse se pondrá como manito al pasar por encima de la imagen*/
+    width:3%;
+    position: absolute;
+    top: 8px;
+    left: 6px;
+}
+
+.image-row{
+    display: flex; /* Se define la fila de imágenes como el container del flex */
+    /*text-align: center;*/
+    justify-content: center; /*Propiedad de flex que alineara el main axis de los items al centro*/
+    
+}
+
+.column {
+    margin: 5px;
+    background-color: #c3c4c7; /*Barra gris con el nombre y ocupación que aparece debajo de las imágenes de las personas.*/
+    height: 385px;
+    
+}
+
+.column img {
+    cursor: pointer; /*El mouse se pondrá como manito al pasar por encima de la imagen*/
+    width: 300px;
+    height: 300px;
+}

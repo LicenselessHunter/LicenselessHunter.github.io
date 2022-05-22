@@ -1,0 +1,121 @@
+.slideshow-container {
+  max-width: 700px;
+  position: relative;
+  margin: 0 auto; /*Cuando haya especificado un widthen el objeto al que se ha aplicado margin: 0 auto, el objeto se ubicará centralmente dentro de su contenedor principal. Especificar auto como el segundo parámetro básicamente le dice al navegador que determine automáticamente los márgenes izquierdo y derecho, lo que hace al configurarlos por igual. Garantiza que los márgenes izquierdo y derecho se establecerán en el mismo tamaño. El primer parámetro 0 indica que los márgenes superior e inferior se establecerán en 0.*/
+  z-index: 0;
+}
+
+.mySlides {
+  display: none; /*Las imagenes se mostraran ocultas en un comienzo por defecto.*/
+  
+}
+
+.mySlides img{
+  width: 700px;
+  height: 400px;
+
+}
+
+.mySlides:hover .text{
+  background: black;
+}
+
+/* Caption text */
+.text {
+  background: linear-gradient(to top, black 15%, transparent);
+  position: absolute;
+  text-align: center;
+  color: white;
+  bottom: 24px;
+  width: 100%;
+  height: 70px;
+  padding-top: 35px;
+  font-size: 17px;
+}
+
+
+.prev, .next {
+  cursor: pointer; /*El mouse se pone como manito al pasarlo por encima de las flechas */
+  position: absolute; /*Posición relativo al slideshow-container */
+  top: 50%; /*Se posicionara al medio del slideshow-container */
+  color: black;
+  font-size: 15px; /*A pesar de que no ex texto, esto aumentara el tamaño de las flechas */
+  font-weight: bold;
+  padding: 16px;
+}
+
+.prev {
+  left: 0%; /*Estara 0% posicionado a la izquierda, es decir, posicionado justo al límite izquierdo de la imagen*/
+}
+
+.next {
+  right: 0%; /*Estara 0% posicionado a la derecha, es decir, posicionado justo al límite derecho de la imagen*/
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: grey;
+}
+
+
+/* The dots/bullets/indicators */
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  background-color: #bbb;
+  border-radius: 50%; /*Esto redondea los bordes, sin esto se verían como cuadrados*/
+  margin-left: 2px;
+  display: inline-block;
+}
+
+.active, .dot:hover { /*Cuando se presione uno de los circulos o se pase el mouse por encima, el color se cambiara al indicado*/
+  background-color: #717171;
+}
+
+#home-sections {
+    width: 85%;
+    margin: 0 auto;
+
+}
+
+#ValueSection {
+  display: flex; /* Se define este section como el container del flex */
+  background-color: black;
+}
+
+#MapSection {
+  display: flex;
+  background-color: #c3c4c7;
+}
+
+#StatisticSection {
+  display: flex;
+  background-color: black;
+}
+
+.TextDescription{ 
+  width: 45%; /* Este div usara el 45% de ancho de PersonDescription */
+  color: #fff;
+  text-align: left; /* Se alinea el texto horizontalmente */
+  align-self: center; /* Propiedad de flex que alinea un item en particular en el centro. En este caso alinea el texto verticalmente */
+  font-weight: 500;
+  padding: 20px;
+}
+
+.TextDescription h1{ 
+  font-weight: 900;
+}
+
+.ImageDescription{
+  width: 55%; /* Este div usara el 55% de ancho de PersonDescription */
+  height: 400px;
+}
+
+.ImageDescription img{
+    width: 100%;
+    height: 100%;
+    
+}
+

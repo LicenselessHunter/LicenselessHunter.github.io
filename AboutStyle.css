@@ -1,0 +1,13 @@
+#main-footer{ /*Esto va a posicionar el footer al fondo de la página*/ 
+	position: absolute;
+
+	left: 0;
+
+	right: 0;
+
+	bottom: 0;
+}
+
+#showcase{
+	height: 500px;
+}
